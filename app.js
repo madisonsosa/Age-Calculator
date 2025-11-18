@@ -145,7 +145,7 @@ function calculateAge(y, m, d) {
     animateValue("days", 0, days, 800);
 }
 
-//--------------Funcion de animacion--------------
+//--------------Funcion de animación--------------
 function animateValue(id, start, end, duration) {
     const obj = document.getElementById(id);
     const range = end - start;
