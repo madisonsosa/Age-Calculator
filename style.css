@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background: white;
+    padding: 40px;
+    width: 700px;
+    border-radius: 25px 25px 150px 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.inputs{
+    display: flex;
+    gap: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label{
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.input-group input{
+    width: 100px;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 6px;
+}
+
+.input-group input.error{
+    border-color: hsl(0, 100%, 67%);
+}
+
+.error-msg{
+    color: hsl(0, 100%, 67%);
+    font-size: 11px;
+    margin-top: 5px;
+    height: 15px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background: hsl(0, 0%, 86%);
+    margin: 30px 0;
+    position: relative;
+}
+
+button {
+    background: hsl(259, 100%, 65%);
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.button:hover{
+    background: hsl(259, 100%, 72%);
+}
+
+.result{
+    font-size: 56px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+.result span{
+    color: hsl(259, 100%, 65%);
+}

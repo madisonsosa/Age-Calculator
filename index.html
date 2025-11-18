@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="inputs">
+
+            <div class="input-group">
+                <label>DAY</label>
+                <input id="day" placeholder="DD">
+                <div class="error-msg" id="day-error"></div>
+            </div>
+        
+        
+            <div class="input-group">
+                <label>MONTH</label>
+                <input id="month" placeholder="MM">
+                <div class="error-msg" id="month-error"></div>
+            </div>
+
+            <div class="input-group">
+                <label>YEAR</label>
+                <input id="year" placeholder="YYYY">
+                <div class="error-msg" id="year-error"></div>
+            </div>
+        </div>
+
+        <div class="line">
+            <button id="btn">
+                <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke="#FFF" stroke-width="4" d="M16 6v20M6 16l10 10 10-10"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="result">
+            <div><span id="years">--</span> years</div>
+            <div><span id="months">--</span> months</div>
+            <div><span id="days">--</span> days</div>
+        </div>
+
+    </div>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
